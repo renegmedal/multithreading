@@ -1,0 +1,8 @@
+Lecture 10: Re-entrant Locks
+
+This is not good. 
+lock.lock();
+increment();
+lock.unlock();
+
+What if increment() throws an exception?
